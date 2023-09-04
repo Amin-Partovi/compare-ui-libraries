@@ -6,7 +6,6 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
-  Stack,
   Input,
   Button,
   ChakraProvider,
