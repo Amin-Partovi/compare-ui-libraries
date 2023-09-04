@@ -14,15 +14,17 @@ import {
 } from "@chakra-ui/react";
 
 const Chakra = () => {
+  const array = [...Array(20).keys()];
   return (
     <ChakraProvider>
       <Input />
-      <Stack spacing={3}>
-        <Select variant="outline" placeholder="Outline" />
-        <Select variant="filled" placeholder="Filled" />
-        <Select variant="flushed" placeholder="Flushed" />
-        <Select variant="unstyled" placeholder="Unstyled" />
-      </Stack>
+      <Select variant="outline" placeholder="Themed outline select">
+        {array.map((item) => (
+          <option value="option1" key={item}>
+            Option {item}
+          </option>
+        ))}
+      </Select>
       <Slider aria-label="slider-ex-1" defaultValue={30}>
         <SliderTrack>
           <SliderFilledTrack />
