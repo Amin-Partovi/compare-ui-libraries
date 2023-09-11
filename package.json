@@ -6,14 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@next/bundle-analyzer": "^13.4.19",
     "@radix-ui/themes": "^1.1.2",
     "autoprefixer": "10.4.15",
+    "cross-env": "^7.0.3",
     "flowbite": "^1.8.1",
     "framer-motion": "^10.16.2",
     "next": "13.4.19",
