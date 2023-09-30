@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
+import {Input} from "@/components/ui/input"
 
 const Shadcn = () => {
   const array = [...Array(20).keys()];
@@ -35,8 +36,8 @@ const Shadcn = () => {
         defaultValue={[50]}
         max={100}
         step={1}
-        className={cn("w-[60%]", className)}
-        {...props}
+        className={cn("w-[60%]")}
+
       />
       <Button>Button</Button>
     </>
